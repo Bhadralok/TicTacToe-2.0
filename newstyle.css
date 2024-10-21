@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 2;
+}
+#entirePage{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: absolute;
+}
+#news{
+  color: white;
+  opacity: 0.3;
+  font-weight: 700;
+}
+.news-div{
+  line-height: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2:hover, a:hover{
+    color: rgb(75, 75, 75);
+}
+@media (max-width: 336px) {
+    .start{
+      transform: scale(0.3);
+    }
+    }
+    @media (max-width: 376px) {
+    .start{
+      transform: scale(0.5);
+    }
+    }
+    @media (max-width: 415px) {
+    .start{
+      transform: scale(0.5);
+    }
+    }
+    @media (max-width: 431px) {
+    .start{
+      transform: scale(0.5);
+    }
+    }
+    @media (max-width: 540px) {
+    .start{
+      transform: scale(0.5);
+    }
+    }
+    @media (max-width: 281px) {
+    .start{
+      transform: scale(0.4);
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    }
+.loader{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 12px solid white;
+  border-top: 12px solid black;
+  animation: spinner 0.7s linear infinite;
+}
+@keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.loaderDiv{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

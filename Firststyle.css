@@ -1,0 +1,316 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ivory;
+}
+h1{
+  color: ivory;
+}
+.start{
+  color: ivory;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.start h2:hover{
+  color: #373737;   
+  transition: 100ms; 
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.board {
+  border-collapse: collapse;
+  transition: 400ms ease-in-out;
+}
+.board td {
+  width: 200px;
+  height: 200px;
+  border: 14px solid ivory;
+  transition: 300ms ease-in-out;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+  color: ivory;
+  font-size: 11rem;
+}
+.board td:hover {
+  background-color: ivory;
+  color: black;
+}
+
+#td-1{
+  border-top: none;
+  border-left: none;
+}
+#td-2{
+  border-top: none;
+  border-left: none;
+}
+#td-3{
+  border-top: none;
+  border-right: none;
+}
+#td-4{
+  border-left: none;
+}
+#td-6{
+  border-right: none;
+}
+#td-6{
+  border-right: none;
+}
+#td-6{
+  border-right: none;
+}
+#td-7{
+  border-left: none;
+  border-bottom: none;
+}
+#td-8{
+  border-bottom: none;
+}
+#td-9{
+  border-bottom: none;
+  border-right: none;
+}
+.dash{
+  background-color: ivory;
+  display: flex;
+  height: 33px;
+  width: 600px;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  padding: 20px;
+  gap: 25px;
+  flex-direction: row;
+  font-weight: 700;
+
+}
+.spaceForO{
+  display: flex;
+  font-size: 1rem;
+  gap: 50px;
+  padding: 5px 20px 5px 20px;
+  border: 5px solid black;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.spaceForX{
+  display: flex;
+  font-size: 1rem;
+  gap: 50px;
+  padding: 5px 20px 5px 20px;
+  border: 5px solid black;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.spaceForDraw{
+  display: flex;
+  font-size: 1rem;
+  gap: 50px;
+  padding: 5px 20px 5px 20px;
+  border: 5px solid black;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.spaceForX p{
+  font-family: 'inter', sans-serif;
+  font-size: 2rem;
+  background-color: black;
+  color: ivory;
+  padding: 5px;
+}
+.spaceForDraw p{
+  font-family: 'inter', sans-serif;
+  font-size: 2rem;
+  background-color: black;
+  color: ivory;
+  padding: 5px;
+}
+.spaceForO p{
+  font-family: 'inter', sans-serif;
+  font-size: 2rem;
+  background-color: black;
+  color: ivory;
+  padding: 5px;
+}
+h3{
+color: ivory;
+margin: 20px 00 5px 0;
+font-size: 1.5rem;
+}
+#td-1:hover, #td-2:hover, #td-3:hover{
+  transform: scale(1.1);
+}
+#td-7:hover, #td-8:hover, #td-9:hover{
+  transform: scale(1.1);
+}
+#td-4:hover, #td-5:hover, #td-6:hover{
+  transform: scale(1.1);
+}
+.heading{
+  color: black;
+  font-weight: 700;
+}
+#winOrLose{
+  border: 2px solid ivory;
+  background-color: ivory;
+  border-radius: 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  color: black;
+  text-transform: uppercase;
+  z-index: 5;
+  display: none;
+  animation: sizing 0.2s linear;
+}
+#overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: transparent;
+}
+#draw{
+  background-color: ivory;
+  position: absolute;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  color: black;
+  text-transform: uppercase;
+  display: none;
+  animation: sizing 0.2s linear;
+}
+#winOrLose p{
+  font-weight: 700;
+}
+#draw p{
+  font-weight: 700;
+}
+#reloadButton{
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 300ms ease-in-out;
+  background-color: ivory;
+}
+#reloadButton:hover{
+  color: rgb(108, 108, 108);
+}
+#reloadButton:active{
+  color: #212121;
+}
+#reloading{
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 300ms ease-in-out;
+  background-color: ivory;
+}
+@keyframes changing {
+  0%{
+    color: ivory;
+  }
+  50%{
+    color: red;
+  }
+  100%{
+    color: ivory;
+  }
+}
+#reloading:hover{
+  color: rgb(56, 56, 56);
+}
+#reloading:active{
+  color: #212121;
+}
+@media (max-width: 336px) {
+.container{
+  transform: scale(0.3);
+}
+#winOrLose{
+  transform: scale(0.3);
+}
+#draw{
+  transform: scale(0.3);
+}
+}
+@media (max-width: 376px) {
+.container{
+  transform: scale(0.5);
+}
+#winOrLose{
+  transform: scale(0.5);
+}
+#draw{
+  transform: scale(0.5);
+}
+}
+@media (max-width: 415px) {
+.container{
+  transform: scale(0.5);
+}
+#winOrLose{
+  transform: scale(0.5);
+}
+#draw{
+  transform: scale(0.5);
+}
+}
+@media (max-width: 431px) {
+.container{
+  transform: scale(0.5);
+}
+#winOrLose{
+  transform: scale(0.5);
+}
+#draw{
+  transform: scale(0.5);
+}
+}
+@media (max-width: 540px) {
+.container{
+  transform: scale(0.5);
+}
+#winOrLose{
+  transform: scale(0.5);
+}
+#draw{
+  transform: scale(0.5);
+}
+}
+@media (max-width: 281px) {
+.container{
+  transform: scale(0.4);
+}
+#winOrLose{
+  transform: scale(0.4);
+}
+#draw{
+  transform: scale(0.4);
+}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Firststyle.css">
+<title>Tic Tac Toe</title>
+</head>
+<body id="black">
+<div class="container" id="change">
+    <h1>TIC TAC TOE GAME</h1>
+  <table class="board" id="board-tic">
+    <tr>
+      <td id="td-1"></td>
+      <td id="td-2"></td>
+      <td id="td-3"></td>
+    </tr>
+    <tr>
+      <td id="td-4"></td>
+      <td id="td-5"></td>
+      <td id="td-6"></td>
+    </tr>
+    <tr>
+      <td id="td-7"></td>
+      <td id="td-8"></td>
+      <td id="td-9"></td>
+    </tr>
+
+  </table>
+  <h3>SCORES</h3>
+    <div class="dash">
+      <div class="spaceForX" id="theX">
+        <p>X</p>
+        <p id="valueforX">0</p>
+      </div> 
+     <div class="spaceForDraw" id="theDraw">
+        <p>DRAW</p>
+        <p id="drawing">0</p>
+      </div>
+      <div class="spaceForO" id="theO">
+        <p>O</p>
+        <p id="valueforO">0</p>
+      </div>
+    </div>
+  </div>
+<div id="winOrLose">
+  <h1 class="heading">TIC TAC TOE GAME</h1>
+  <p><span id="decide"></span> Wins this Round 😂😂</p>
+<button id="reloadButton">Play Again</button>
+</div>
+<div id="draw">
+  <h1 class="heading">TIC TAC TOE GAME</h1>
+  <p>It's a draw</p>
+<button id="reloading">Play Again</button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
